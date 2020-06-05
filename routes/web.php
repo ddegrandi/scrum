@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/teste', function () {
     return 'testedani<br>teste';
 });
+
+Route::get('/testecaipirinha', function () {
+    return 'CORDERO, TÁ FORTE PACARAI';
+});
