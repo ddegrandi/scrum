@@ -14,8 +14,4 @@ class Plan extends Model
         'active'
     ];
 
-    protected $hidden = [
-        'created_at',
-        'updated_at'
-    ];
 }
