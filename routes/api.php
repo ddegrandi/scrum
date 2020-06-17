@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/plans', 'Api\\PlanController@index');
 Route::post('/plans', 'Api\\PlanController@store');
 Route::get('/plans/{plan}', 'Api\\PlanController@show');
 Route::put('/plans/{plan}', 'Api\\PlanController@update');
 Route::delete('/plans/{plan}', 'Api\\PlanController@destroy');
+*/
+
+Route::resource('plans','api\\PlanController')->except(['create','edit']);
