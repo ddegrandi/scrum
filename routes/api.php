@@ -24,3 +24,4 @@ Route::delete('/plans/{plan}', 'Api\\PlanController@destroy');
 
 Route::resource('plans','api\\PlanController')->except(['create','edit']);
 Route::resource('groups','api\\GroupController')->except(['create','edit']);
+Route::resource('users','api\\UserController')->except(['create','edit']);
